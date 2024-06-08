@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Mengatur tinggi body sesuai dengan tinggi viewport */
+    overflow: hidden; /* Menghilangkan overflow yang bisa muncul */
+    display: flex; /* Membuat body menjadi flex container */
+}
+
+.container {
+    display: flex;
+    flex: 1; /* Memberikan flex 1 untuk container agar mengisi seluruh ruang tersedia */
+    height: 100%; /* Mengisi tinggi container */
+    overflow: hidden; /* Menghilangkan overflow yang bisa muncul */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Memberikan overflow-y: auto untuk konten agar dapat di-scroll jika terlalu panjang */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.insert-button, .download-button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.details-button {
+    background-color: #3498DB;
+    color: white;
+}
+
+.edit-button {
+    background-color: #F1C40F;
+    color: white;
+}
+
+.delete-button {
+    background-color: #E74C3C;
+    color: white;
+}
